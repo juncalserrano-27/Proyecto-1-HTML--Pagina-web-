@@ -1,0 +1,140 @@
+/* =========================
+   Estilos SOLO para Contacto
+   Paleta del sitio:
+   - #7AB2B2 (header)
+   - #09637E (acento y footer)
+   ========================= */
+
+body {
+  background: #f4fbfb;
+}
+
+.contacto {
+  max-width: 1100px;
+  margin: 45px auto;
+  padding: 0 20px 40px;
+}
+
+.contacto h1 {
+  color: #09637E;
+  font-size: 44px;
+  font-weight: 800;
+  margin: 10px 0 10px;
+}
+
+.contacto-intro {
+  color: #1f2d2f;
+  line-height: 1.65;
+  font-size: 16px;
+  margin: 0 0 18px;
+  max-width: 900px;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 14px;
+}
+
+.contacto-card {
+  background: #ffffff;
+  border: 1px solid rgba(9, 99, 126, 0.18);
+  border-radius: 16px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.contacto-card h2 {
+  color: #09637E;
+  font-size: 26px;
+  margin: 6px 0 14px;
+}
+
+.contacto-item {
+  display: flex;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(9, 99, 126, 0.12);
+}
+
+.contacto-item:last-of-type {
+  border-bottom: none;
+}
+
+.contacto-label {
+  font-weight: 700;
+  color: #1f2d2f;
+  min-width: 90px;
+}
+
+.contacto-value {
+  color: #1f2d2f;
+}
+
+.contacto-nota {
+  margin-top: 14px;
+  color: #1f2d2f;
+  line-height: 1.6;
+}
+
+/* Formulario */
+.contacto-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.contacto-form label {
+  font-weight: 700;
+  color: #1f2d2f;
+  margin-top: 6px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  border: 1px solid rgba(9, 99, 126, 0.25);
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-size: 15px;
+  outline: none;
+  background: #fbffff;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: #09637E;
+}
+
+.contacto-form button {
+  margin-top: 8px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #ffffff;
+  background: #09637E;
+}
+
+.contacto-form button:hover {
+  filter: brightness(1.05);
+}
+
+.contacto-cierre {
+  margin-top: 12px;
+  color: #1f2d2f;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .contacto-grid {
+    grid-template-columns: 1fr;
+  }
+  .contacto h1 {
+    font-size: 34px;
+  }
+}

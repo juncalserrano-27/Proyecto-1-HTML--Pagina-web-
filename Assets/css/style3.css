@@ -1,0 +1,85 @@
+/* =========================
+   Estilos SOLO para Nosotros
+   (style3.css se usa únicamente en Nosotros.html)
+   Paleta del sitio:
+   - #7AB2B2 (header)
+   - #09637E (acento y footer)
+   ========================= */
+
+/* Fondo suave para que no se vea tan plano */
+body {
+  background: #f4fbfb;
+}
+h1{
+    font-size: 44px;
+}
+/* Contenedor general del apartado */
+.nosotros {
+  max-width: 1050px;
+  margin: 45px auto;
+  padding: 0 20px 40px;
+}
+
+/* Título principal */
+.nosotros h1 {
+  color: #09637E;
+  font-size: 44px;
+  font-weight: 800;
+  margin: 10px 0 25px;
+  letter-spacing: 0.2px;
+}
+
+/* Cada bloque como “card” */
+.nosotros-bloque {
+  background: #ffffff;
+  border: 1px solid rgba(9, 99, 126, 0.18);
+  border-radius: 16px;
+  padding: 18px 18px 14px;
+  margin: 18px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* Subtítulos */
+.nosotros-bloque h2 {
+  color: #09637E;
+  font-size: 28px;
+  margin: 12px 0 8px;
+}
+
+/* Texto */
+.nosotros-bloque p,
+.nosotros-bloque li {
+  color: #1f2d2f;
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+/* Imágenes: aquí está la magia.
+   Aunque la imagen sea cuadrada, se verá horizontal y estética */
+.nosotros-bloque img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  aspect-ratio: 16 / 9;   /* fuerza formato horizontal */
+  object-fit: cover;      /* recorta bonito */
+  max-height: 420px;      /* evita que se coma la pantalla */
+}
+
+/* Lista de valores */
+.nosotros-bloque ul {
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .nosotros h1 {
+    font-size: 34px;
+  }
+  .nosotros-bloque h2 {
+    font-size: 24px;
+  }
+  .nosotros-bloque {
+    padding: 16px;
+  }
+}

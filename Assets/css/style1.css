@@ -1,0 +1,176 @@
+/* Configuración General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f4fbfb;
+}
+
+/*----------------- Menú de navegación -----------------*/
+header {
+  background-color: #7ab2b2;
+}
+/*Logo y texto del logo*/
+.nav-menu-logo {
+  align-items: center;
+}
+.nav-menu-logo img {
+  width: 75px;
+}
+.nav-menu-logo a {
+  font-size: 30px;
+}
+.nav-menu-logo-li div {
+  display: flex;
+  align-items: center;
+  height: 0;
+}
+.prue div a {
+  padding: 0px 0px 0px 0px;
+}
+/*Inicio-Nosotros/Servicios/Blog/Contacto*/
+.Menu-Navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Menu-Navegacion ul {
+  list-style: none;
+  display: flex;
+}
+
+.Menu-Navegacion ul li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.Menu-Navegacion ul li a {
+  color: #09637e;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+.nav-menu li a {
+  padding: 30px 15px;
+}
+
+.Menu-Navegacion li ul {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  background-color: #09637e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Menu-Navegacion li:hover > ul {
+  display: block;
+}
+.Menu-Navegacion li ul li {
+  display: block; /* ← CADA LI en línea nueva */
+  padding: 0;
+  margin: 0;
+}
+.Menu-Navegacion li:hover > ul a {
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+
+.Sub-menu {
+  position: relative;
+}
+.Sub-menu ul li {
+  display: list-item;
+  padding: 10px;
+}
+.Sub-menu ul li a > img {
+  width: 10%;
+}
+
+/*-----------------Banner-----------------*/
+main {
+  flex: 1;
+}
+
+.container {
+  width: 100vw;
+  display: grid;
+  /* es para que el slider este centrado en la pantalla */
+  place-content: center;
+}
+
+/* nuestro slider tendrá un máximo de tamaño de 1000px, una vez que el tamaño sea superado el slider no 
+crecerá mas pero si la pantalla es de 1000px o menos el slider tendra el 100% del tamaño de la pantalla
+el slider basicamente se adapta a la pantalla */
+.slide {
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.slide ul {
+  /* para que cada una de las imagenes quede al lado de la otra */
+  display: flex;
+  padding: 0;
+  /* se modifica depende de la cantidad de imagenes */
+  width: 400%;
+  /* duracion 20 s, animacion infinite (nunca se acaba) */
+  animation: slide 20s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+
+.slide img {
+  /* 1 El width le da el 100% de tamaño a la imagen dentro del contenedor
+2 La propiedad object-fit es para la imagen llene todo el contenedor.
+ */
+  width: 100vw;
+  height: 90vh;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/*-----------------Footer-----------------*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #09637e;
+  font-size: 0.9rem;
+  color: #fff;
+}
