@@ -1,6 +1,6 @@
 # EcoPanel - Sitio Web Corporativo
 
-EcoPanel es un proyecto académico desarrollado en equipo para la materia **Plataformas Abiertas II**.  
+EcoPanel es un proyecto académico desarrollado en equipo para la materia *Plataformas Abiertas II*.  
 El proyecto consiste en la creación de un sitio web corporativo para una empresa ficticia dedicada a la instalación y comercialización de paneles solares.
 
 ## Descripción
@@ -30,7 +30,7 @@ Se trabajó en la organización del contenido, estructura de navegación y desar
 
    cd ecopanel
 
-3. Abre el archivo `index.html` en tu navegador.
+3. Abre el archivo index.html en tu navegador.
 
 ## Uso
 
@@ -64,5 +64,7 @@ SANCHEZ HERRERA YEYMAR JASSYEL
 SERRANO DURAN LILIA JUNCAL
 
 TORRES FAJARDO VICTOR URIEL
+
+TOXTLE GARCIA, TIFFANY YUSANI
 
 Proyecto realizado en equipo para la materia Plataformas Abiertas II.
